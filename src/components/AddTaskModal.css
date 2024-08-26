@@ -24,6 +24,7 @@ src/components/AddTaskModal.css
     max-width: 400px; /* Ancho máximo del modal */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    font-family: 'GFS Didot', serif;
   }
   
   /* Estilo del botón de cerrar */
@@ -48,11 +49,13 @@ src/components/AddTaskModal.css
     font-size: 16px;
     text-align: center;
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    font-family: 'GFS Didot', serif;
   }
   
   /* Estilo del botón de agregar tareas */
   .add-new-task-button {
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% - 20px);
     padding: 10px;
     background-color: black; /* Fondo negro para el botón */
     color: white; /* Texto blanco */
@@ -61,6 +64,7 @@ src/components/AddTaskModal.css
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: 'GFS Didot', serif;
   }
   
   .add-task-button:hover {
