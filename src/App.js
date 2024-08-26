@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import TaskList from './components/TaskList';
 import AddTaskModal from './components/AddTaskModal';
 import ProgressBar from './components/ProgressBar';
+import Footer from './components/Footer'; // Importa el componente Footer
 import './App.css';
 
 function App() {
@@ -78,6 +79,7 @@ function App() {
         {showModal && <AddTaskModal addTask={addTask} closeModal={() => setShowModal(false)} />}
       </div>
       <TaskList tasks={tasks} toggleComplete={toggleComplete} deleteTask={deleteTask} />
+      <Footer />
     </div>
   );
 }

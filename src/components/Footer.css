@@ -1,0 +1,13 @@
+/* src/components/Footer.css */
+
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #1a1a1a; /* Fondo oscuro para que coincida con el resto de la aplicación */
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-family: 'GFS Didot', serif; /* Asegúrate de que la fuente coincida con el resto de la app */
+  }
