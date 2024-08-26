@@ -1,0 +1,35 @@
+/* src/components/TaskItem.css */
+
+/* Estilos generales de la tarea */
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 18px; /* Tamaño de fuente para que coincida con la UI */
+  }
+  
+  .task-title {
+    cursor: pointer;
+  }
+  
+  .task-title.completed {
+    text-decoration: line-through;
+    color: #888; /* Cambia el color del texto cuando está completado */
+  }
+  
+  /* Estilos para el botón de eliminación */
+  .delete-button {
+    background-color: transparent; /* Fondo negro para el botón */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; /* Tamaño del botón */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    background-color: #333; /* Cambia el fondo al pasar el cursor */
+  }

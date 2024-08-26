@@ -13,6 +13,27 @@ body {
   margin: 0 auto;
 }
 
+.task-header {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos al centro */
+  justify-content: space-between; /* Distribuye el espacio entre el título y el botón */
+  margin-bottom: 10px; /* Añade espacio debajo del encabezado */
+}
+
+.task-header h2 {
+  margin: 0; /* Elimina el margen predeterminado */
+  font-size: 24px; /* Ajusta el tamaño de fuente del título */
+}
+
+.add-task-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 24px; /* Aumenta el tamaño de la fuente para que sea más visible */
+  cursor: pointer;
+}
+
+/* Otros estilos */
 .task-list {
   text-align: left;
 }
@@ -20,8 +41,35 @@ body {
 .task-item {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  align-items: center; /* Alinea verticalmente las tareas y el botón de eliminación */
+  padding: 5px 0; /* Espaciado vertical entre las tareas */
 }
+
+.task-item span {
+  cursor: pointer;
+}
+
+.task-item span.completed {
+  text-decoration: line-through;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+/* .task-list {
+  text-align: left;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+} */
 
 .add-task-button {
   background-color: transparent;
@@ -29,6 +77,7 @@ body {
   border: none;
   font-size: 24px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .modal {

@@ -69,11 +69,15 @@ function App() {
 
   return (
     <div className="App">
+
       <h1>Minima-list</h1>
       <ProgressBar level={level} completedTasks={completedTasks} />
+      <div className="task-header">
+        <h2>To do</h2>
+        <button className="add-task-button" onClick={() => setShowModal(true)}>+</button>
+        {showModal && <AddTaskModal addTask={addTask} closeModal={() => setShowModal(false)} />}
+      </div>
       <TaskList tasks={tasks} toggleComplete={toggleComplete} deleteTask={deleteTask} />
-      <button className="add-task-button" onClick={() => setShowModal(true)}>+</button>
-      {showModal && <AddTaskModal addTask={addTask} closeModal={() => setShowModal(false)} />}
     </div>
   );
 }

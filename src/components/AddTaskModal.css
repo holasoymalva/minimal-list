@@ -1,0 +1,68 @@
+src/components/AddTaskModal.css
+
+/* Estilo del fondo del modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro translúcido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Estilo del contenedor del modal */
+  .modal-content {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+    width: 90%;
+    max-width: 400px; /* Ancho máximo del modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Estilo del botón de cerrar */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  /* Estilo del campo de entrada de tareas */
+  .task-input {
+    width: calc(100% - 20px); /* Ajusta el ancho para dejar espacio para el padding */
+    padding: 10px;
+    margin: 20px 0; /* Añade margen superior e inferior */
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+  }
+  
+  /* Estilo del botón de agregar tareas */
+  .add-new-task-button {
+    width: 100%;
+    padding: 10px;
+    background-color: black; /* Fondo negro para el botón */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task-button:hover {
+    background-color: #333; /* Cambia el fondo al pasar el cursor */
+  }
