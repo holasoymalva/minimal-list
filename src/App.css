@@ -11,6 +11,7 @@ body {
   padding: 20px;
   max-width: 400px;
   margin: 0 auto;
+  font-family: 'GFS Didot', serif;
 }
 
 .task-header {
